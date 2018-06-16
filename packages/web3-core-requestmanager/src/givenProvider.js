@@ -26,7 +26,8 @@ var givenProvider = null;
 
 // ADD GIVEN PROVIDER
 /* jshint ignore:start */
-var global = Function('return this')();
+// NOTE: removed this because it's causing unsafe-eval
+// var global = Function('return this')();
 
 // EthereumProvider
 if(typeof global.ethereumProvider !== 'undefined') {
